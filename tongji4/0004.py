@@ -1,7 +1,7 @@
 import io
 import operator
 
-def get_count_table(file='0004.txt',ignore=[],lower=True):
+def get_count_table(file='0004.txt',ignore=[',', '.', ':', '!', '?', '”', '“', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'],lower=True):
     txt=open(file).read()
     for i in ignore:
         txt=txt.replace(i,'')
